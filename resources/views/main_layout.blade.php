@@ -6,11 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <title>Document</title>
+    <title>Laravel | DC Comics</title>
 </head>
 
 <body>
-    @include('partials.header')
+    <header>
+        @include('partials.header')
+    </header>
+    <main>
+        @yield('main-content')
+    </main>
+    <footer>
+        @include('partials.footer')
+    </footer>
 </body>
 
 </html>

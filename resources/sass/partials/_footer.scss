@@ -1,0 +1,48 @@
+.link-list-logo {
+    min-height: 43vh;
+    background-image: url('/images/footer-bg.jpg');
+}
+
+.container {
+    height: 43vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    position: relative;
+}
+
+.link-list {
+    width: 50%;
+    height: 43vh;
+    padding: 2.5rem;
+    display: flex;
+
+    .list-container {
+        width: calc(100% / 3);
+
+        h3 {
+            color: #fff;
+            margin-bottom: .9rem;
+        }
+
+        ul {
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            list-style-type: none;
+            color: gray;
+            font-size: .9rem;
+            margin: .3rem 0;
+        }
+    }
+}
+
+.big-logo {
+    width: 50%;
+    height: 43vh;
+    z-index: 0;
+    position: absolute;
+    right: 0;
+    bottom: 25%;
+}
