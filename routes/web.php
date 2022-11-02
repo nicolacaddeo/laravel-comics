@@ -14,5 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('main_layout');
+    $comics = config('data.comics');
+
+    return view('comics', compact('comics'));
 });

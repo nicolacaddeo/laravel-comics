@@ -10,6 +10,13 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.cards-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .blue-header {
   height: 2vh;
   background-color: #0282f9;
@@ -94,5 +101,34 @@ nav ul li {
   position: absolute;
   right: 0;
   bottom: 25%;
+}
+
+main {
+  background-color: #1c1c1c;
+  z-index: 1;
+  position: relative;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: calc(16.6666666667% - 2rem);
+  margin: 1rem;
+}
+
+.card .thumb {
+  width: 200px;
+  height: 200px;
+}
+
+.card .card-info {
+  padding-top: 0.7rem;
+  text-align: center;
+}
+
+.card .card-info h4 {
+  margin-bottom: 0.3rem;
+  color: white;
+  text-transform: uppercase;
 }
 

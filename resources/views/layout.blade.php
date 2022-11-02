@@ -14,7 +14,9 @@
         @include('partials.header')
     </header>
     <main>
-        @yield('main-content')
+        <div class="cards-container">
+            @yield('main-content')
+        </div>
     </main>
     <footer>
         @include('partials.footer')
